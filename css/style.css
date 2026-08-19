@@ -290,6 +290,19 @@ nav.main-nav .sub a:hover { background: var(--bg-alt); text-decoration: none; }
 }
 .funders img { max-height: 56px; width: auto; filter: grayscale(0.15); opacity: 0.9; background: #f2f6fa; padding: 0.4rem 0.6rem; border-radius: 4px; }
 
+/* Bio-style meta box, reused for project pages */
+.project-meta {
+  font-family: var(--mono); font-size: 0.85rem; color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+.project-meta div { margin-bottom: 0.35rem; }
+.project-meta div:last-child { margin-bottom: 0; }
+.project-meta .label { color: var(--text-faint); }
+
 /* Footer */
 footer.site-footer {
   background: var(--bg-alt);
@@ -304,6 +317,20 @@ footer.site-footer .foot-grid {
   grid-template-columns: 2fr 1fr 1fr;
   gap: 2rem;
   margin-bottom: 2rem;
+}
+.foot-funders {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem;
+  padding-bottom: 1.75rem;
+  margin-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border-soft);
+}
+.foot-funders span.foot-funders-label {
+  font-family: var(--mono); font-size: 0.78rem; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--text-faint); margin-right: 0.5rem;
+}
+.foot-funders img {
+  max-height: 40px; width: auto;
+  background: #f2f6fa; border-radius: 4px; padding: 0.3rem 0.5rem;
 }
 @media (max-width: 700px) {
   footer.site-footer .foot-grid { grid-template-columns: 1fr; }
